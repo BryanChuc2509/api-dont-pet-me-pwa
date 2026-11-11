@@ -4,10 +4,12 @@ const path = require('path');
 const historiaRouter = require('./routes/historia');
 const personajesRouter = require('./routes/personajes');
 const nivelesRouter = require('./routes/niveles');
+const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 app.use('/imagenes', express.static(path.join(__dirname, '..', 'imagenes')));
