@@ -29,6 +29,7 @@ app.use((req, res) => {
 if (require.main === module) {
   app.listen(port, () => {
     console.log(`API ejecutándose en http://localhost:${port}`);
+    console.log('DEBUG: CORS habilitado para todas las rutas y métodos');
   });
 }
 
