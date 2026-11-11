@@ -42,7 +42,7 @@ const personajes = [
     imagenes: []
   },
   {
-    imagen: '/imagenes/personajes/Cienpies.jpg',
+    imagen: '/imagenes/personajes/Ciempies.png',
     titulo: 'Ciempies',
     rol: 'Enemigo',
     imagenes: []
